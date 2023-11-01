@@ -6,8 +6,6 @@ const $close_icon = $menuIcon.querySelector('.fa-caret-left');
 $menu.classList.add('caixa-close')
 /* barra navbar */
 
-const $navbar = document.querySelector('.nave')
-
 const $open_nav_bar_icon = document.getElementById("expand_navbar")
 $menuIcon.addEventListener('click', () => {
     if($menu.className == 'caixa caixa-close') {

@@ -6,15 +6,9 @@
 }
 
 body {
-    background-image: url("https://casacor.abril.com.br/wp-content/uploads/sites/7/2020/09/Breaking-news-thumb-SC-2.jpg?quality=90&strip=info&w=1920&h=821&crop=1");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-    padding: 10px;
     overflow-y: visible;
     user-select: none;
+    background-color: white;
 }
 
 
@@ -25,6 +19,7 @@ html {
 
 
 .logo_casacor {
+    position: relative;
     display: flex;
     background-color: white;
     width: 100%;
@@ -32,6 +27,7 @@ html {
     padding: 25px;
     border-radius: 2px;
     box-shadow: rgba(0, 0, 0, 0.418) 0px 12px 48px;
+    z-index: 2;
 }
 
 /* MENU SLIDER */
@@ -101,7 +97,7 @@ html {
 
 .menu-background {
     position: absolute;
-    z-index: 2;
+    z-index: 3;
     margin: 20px;
     padding: 20px;
     transition: 1s;
@@ -133,6 +129,15 @@ html {
     transform: rotate(360deg);
 }
 
+.item-slide {
+    transition: all 1s ease-in-out;
+}
+.item-slide.esconder {
+    left: -450px;
+}
+
 .close-icon .bar:nth-child(3) {
     transform: rotate(360deg);
 }
+
+
